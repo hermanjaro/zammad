@@ -86,7 +86,7 @@ ENV POSTGRESQL_DB=zammad_production \
     POSTGRESQL_HOST=zammad-postgresql \
     POSTGRESQL_PORT=5432 \
     POSTGRESQL_USER=zammad \
-    POSTGRESQL_PASS=zammad \
+    #POSTGRESQL_PASS=zammad \
     POSTGRESQL_OPTIONS=?pool=50 \
     RAILS_TRUSTED_PROXIES=127.0.0.1,::1
 
