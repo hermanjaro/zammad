@@ -82,11 +82,7 @@ RUN bundle exec bootsnap precompile --gemfile app/ lib/
 FROM base
 
 # Application variables with defaults matching the Zammad docker stack.
-ENV POSTGRESQL_DB=zammad_production \
-    POSTGRESQL_HOST=zammad-postgresql \
-    POSTGRESQL_PORT=5432 \
-    POSTGRESQL_OPTIONS=?pool=50 \
-    RAILS_TRUSTED_PROXIES=127.0.0.1,::1
+
 
 RUN groupadd --system --gid 1000 zammad && \
   useradd --create-home --home /opt/zammad --shell /bin/bash --uid 1000 --gid 1000 zammad
